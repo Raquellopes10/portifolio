@@ -1,0 +1,317 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #181818; */
+    /* background-image: url('img/image\ 6.png'); */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/image\ 6.png'); /* Pode usar a imagem de fundo que preferir */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Efeito de escurecimento no fundo */
+    z-index: -1;
+}
+
+.contenido-banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 350px;
+}
+
+.contenedor-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white; /* Cor de borda ao redor da imagem */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #bbb;
+    margin: 10px 0 20px;
+}
+
+.redes a {
+    margin: 0 10px;
+    color: white; /* Cor dos ícones das redes sociais */
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #ccc; /* Cor ao passar o mouse */
+}
+
+/* seção sobre mim */
+.about-me-section {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-me-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-me-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-me-text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    width: 90%;
+  }
+
+  .about-me-title {
+    font-size: 2rem;
+  }
+
+  .about-me-text {
+    font-size: 1rem;
+  }
+}
+
+
+/* secão dos cards  */
+
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.projetos{
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 0.1rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 0.5rem;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+     /* color: #4a90e2; */
+    color: #181818;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.card-content p {
+    color: #555;
+}
+
+.pro{
+    text-decoration: none;
+}
+
+/* rodape do site  */
+
+
+  footer {
+    width :100%;
+  }
+  
+  h3 {
+    font-size: 25px;
+    color: black;
+
+  }
+
+  .phone{
+    color: black;
+  }
+  
+  .footer-container {
+    position: relative;
+    bottom: 0;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 15px 0;
+  }
+  
+  .left-area ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px
+  }
+  
+  .center-area, .right-area, .left-area {
+    height: 50%;
+     margin-bottom: 10px;
+  }
+  
+  
+  
+  .center-area a {
+    position: relative;
+    text-decoration: none; 
+    color: black; 
+   
+  }
+  
+  .center-area a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #495464;
+    border-radius: 40px;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  .center-area a:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+  }
+  
+  
+  .center-area a, .right-area li{
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  
+  .center-area li, .right-area li{
+    padding: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  
+  .text {
+    width: 100%;
+    height: 50px;
+    background-color:#535C5F;
+    color: black;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-area i:hover {
+    color: rgb(84, 80, 76);
+    transition: 0.3s;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    a, li {
+      font-size: 14px;
+    }
+    .center-area a, .right-area li{
+    font-size: 18px;
+  }
+    
+    ul {
+      margin-bottom: 14px;
+    }
+  }
+
+  .portfolio-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .portfolio-section {
+    margin-top: 50px;
+  }
+  
